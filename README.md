@@ -7,4 +7,4 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 #### Milestone_2: Create the variables for the game
 #### Milestone_3: Check if the guessed character is in the word
 #### Milestone_4: Create the Game class
-#### Milestone_5: Refactor and optimise
+#### Milestone_5: Create the function play_game
