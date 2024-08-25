@@ -12,9 +12,9 @@ class Hangman:
         self.num_lives = num_lives
         self.num_letters = int(len(set(self.word)))
         self.list_of_guesses = []
-        print(f"line 11: {self.word_guessed}")
-        print(f"line 12:{self.num_lives}")
-        print(f"line 13: {self.num_letters}")
+        #print(f"line 11: {self.word_guessed}")
+        #print(f"line 12:{self.num_lives}")
+        #print(f"line 13: {self.num_letters}")
 
     '''Create the class Hangman for the game objects.
     Pass in word_list and num_lives as parameters.
@@ -45,13 +45,13 @@ class Hangman:
                     #self.num_letters = int(len(set(self.word))) + 1 - int(len(set(self.word_guessed)))
             self.num_letters -=1
             print("Good guess!", guess, "is in the word.")
-            print(f"line 37: {self.num_letters}")
+            #print(f"line 37: {self.num_letters}")
         else:
             self.num_lives -=1
             print("Sorry,", guess, "is not in the word. Try again.")
             print("You have", self.num_lives, "lives left.")  
-        print(f"line 35: {self.word_guessed}")
-        print(f"line 37: {self.num_letters}")
+        #print(f"line 35: {self.word_guessed}")
+        #print(f"line 37: {self.num_letters}")
     '''Define the method check_guess.
     Pass guess to the method as a parameter.
     The function will convert the guessed letter into lowercase.
@@ -92,5 +92,5 @@ def play_game(word_list):
         else:
             print("Congratulations. You won the game!")
             break
-    print(f"line 84: {game.num_letters}")        
+    #print(f"line 84: {game.num_letters}")        
 play_game(my_hangman_list)
