@@ -50,6 +50,7 @@ class Hangman:
             self.num_lives -=1
             print("Sorry,", guess, "is not in the word. Try again.")
             print("You have", self.num_lives, "lives left.")  
+        print(f"{self.word_guessed}")
         #print(f"line 35: {self.word_guessed}")
         #print(f"line 37: {self.num_letters}")
     '''Define the method check_guess.
@@ -78,7 +79,7 @@ class Hangman:
     If the guess is valid and has not been tried before, run the check_guess function and append this guess to the list_of_guesses.'''
 
 
-my_hangman_list = ['apple', 'pear', 'cherry', 'watermelon', 'strawberry']
+my_hangman_list = ['lime', 'apple', 'cherry', 'watermelon', 'strawberry']
 
 def play_game(word_list):
     num_lives = 5
