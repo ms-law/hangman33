@@ -32,7 +32,16 @@ class Hangman:
         if guess in self.word:
             for letter in self.word:
                 if letter == guess:
-                    self.word_guessed[self.word.index(letter)] = guess
+                    num = self.word.count(letter)
+                    positions = []
+                    position_i = 0
+                    for i in range(num):
+                        position = self.word.index(letter, position_i)
+                        position_i = self.word.index(letter, position) +1
+                        positions.append(position)
+                    for p in positions:
+                        self.word_guessed[p] = guess
+                    #self.word_guessed[self.word.index(letter)] = guess
                     #self.num_letters = int(len(set(self.word))) + 1 - int(len(set(self.word_guessed)))
             self.num_letters -=1
             print("Good guess!", guess, "is in the word.")
