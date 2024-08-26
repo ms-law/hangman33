@@ -12,6 +12,7 @@ class Hangman:
         self.num_lives = num_lives
         self.num_letters = int(len(set(self.word)))
         self.list_of_guesses = []
+        print(f"{self.word_guessed}")
         #print(f"line 11: {self.word_guessed}")
         #print(f"line 12:{self.num_lives}")
         #print(f"line 13: {self.num_letters}")
